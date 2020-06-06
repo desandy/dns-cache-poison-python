@@ -20,6 +20,6 @@ with open(header_word_list) as fp:
             print('[!] Found Header: ' + line + ":" + default_header_value)
             print('-------------------')
             if (default_header_value in web_request.text):
-                print("[!!] Possible XXS")   
+                print("[!!] Possible XSS")   
         line = fp.readline()
         line = line.rstrip("\n")
